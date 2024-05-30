@@ -21,7 +21,7 @@ export default function Saves() {
       try {
         const allCookies = document.cookie;
   
-        const response = await axios.get("http://localhost:3002/api/saves/", {params: {
+        const response = await axios.get("https://smart-recipe2.onrender.com/api/saves/", {params: {
           userId: userId,
           accessToken:accessToken
       }});

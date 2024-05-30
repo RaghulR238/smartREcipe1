@@ -113,7 +113,7 @@ export default function Login() {
     try {
       console.log("Trying to login in clientside");
       const res = await axios.post(
-        "http://localhost:3002/api/auth/login",
+        "https://smart-recipe2.onrender.com/api/auth/login",
         //{ username, password },
         {...upload},
       
@@ -140,7 +140,7 @@ export default function Login() {
     const url=await uploads(file);
     console.log("url is  :  ",url);
     try{
-      const res=await axios.post("http://localhost:3002/api/auth/register",{
+      const res=await axios.post("https://smart-recipe2.onrender.com/api/auth/register",{
         ...upload,
         image:url
       },{

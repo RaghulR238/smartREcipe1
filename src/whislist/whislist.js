@@ -35,7 +35,7 @@ export default function Wishlist() {
       try {
         const allCookies = document.cookie;
   
-        const response = await axios.get("http://localhost:3002/api/upload/", {
+        const response = await axios.get("https://smart-recipe2.onrender.com/api/upload/", {
           withCredentials: true,
           headers: {
             Cookie: allCookies,
