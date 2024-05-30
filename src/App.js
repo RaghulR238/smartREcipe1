@@ -100,10 +100,10 @@ useEffect(()=>
     try {
       console.log("fetch data called");
 
-      // const response = await axios.get(`https://api.spoonacular.com/recipes/random?number=10&apiKey=${apiKey1}`);
+      const response = await axios.get(`https://api.spoonacular.com/recipes/random?number=10&apiKey=${apiKey1}`);
 
-    //  console.log(response.data.recipes);
-    //   setTitle(response.data.recipes);
+     console.log(response.data.recipes);
+      setTitle(response.data.recipes);
     } catch (error) {
       console.error('Error fetching data:', error);
     }
